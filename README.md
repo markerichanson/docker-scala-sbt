@@ -11,6 +11,14 @@ docker pull markerichanson/docker-scala-sbt
 
 ## Building
 ```sh
+$ git clone https://github.com/markerichanson/docker-scala-sbt.git
+Cloning into 'docker-scala-sbt'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+Checking connectivity... done.
+
 docker build -f docker-scala-sbt/Dockerfile -t "markerichanson/docker-scala-sbt:2.11.8-0.13.13" --build-arg SBT_VERSION=0.13.13 .
 ```
 
